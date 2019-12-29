@@ -1,0 +1,566 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "bus soixante deux",
+      "intents": [
+        {
+          "name": "HorairesIntent",
+          "slots": [
+            {
+              "name": "station",
+              "type": "station_type",
+              "samples": [
+                "{station}",
+                "station {station}",
+                "arrêt {station}"
+              ]
+            }
+          ],
+          "samples": [
+            "donne moi les horaires à l'arrêt {station}",
+            "donne moi les horaires à la station {station}",
+            "donne moi les horaires station {station}",
+            "donne moi les horaires arrêt {station}",
+            "quand arrive le bus à l'arrêt {station}",
+            "quand arrive le bus à la station {station}",
+            "quand arrive le bus station {station}",
+            "quand arrive le bus arrêt {station}",
+            "c'est quand le prochain passage à l'arrêt {station}",
+            "c'est quand le prochain passage à la station {station}",
+            "c'est quand le prochain passage station {station}",
+            "c'est quand le prochain passage arrêt {station}",
+            "station {station}",
+            "arrêt {station}",
+            "{station}"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "laisse tomber",
+            "annule"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "aide moi"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "arrête",
+            "stop"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "donne-moi les derniers horaires",
+            "quand arrive le prochain bus",
+            "repète",
+            "encore"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": [
+            "départ",
+            "revient au point de départ",
+            "revient au départ"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "no",
+            "non"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "yes",
+            "oui"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "porte+de+france",
+              "name": {
+                "value": "Porte de France",
+                "synonyms": [
+                  "Porte de France"
+                ]
+              }
+            },
+            {
+              "id": "bibliotheque+rue+mann",
+              "name": {
+                "value": "Bibliotheque Rue Mann",
+                "synonyms": [
+                  "Rue Mann",
+                  "Bibliotheque Rue Mann"
+                ]
+              }
+            },
+            {
+              "id": "bibliotheque+francois+mitterrand",
+              "name": {
+                "value": "Bibliotheque Francois Mitterrand",
+                "synonyms": [
+                  "Francois Mitterrand",
+                  "Bibliotheque Francois Mitterrand"
+                ]
+              }
+            },
+            {
+              "id": "bibliotheque+chevaleret",
+              "name": {
+                "value": "Bibliotheque Chevaleret",
+                "synonyms": [
+                  "Chevaleret",
+                  "Bibliotheque Chevaleret"
+                ]
+              }
+            },
+            {
+              "id": "patay+++tolbiac",
+              "name": {
+                "value": "Patay - Tolbiac",
+                "synonyms": [
+                  "Patay",
+                  "Patay - Tolbiac"
+                ]
+              }
+            },
+            {
+              "id": "olympiades",
+              "name": {
+                "value": "Olympiades",
+                "synonyms": [
+                  "Olympiades"
+                ]
+              }
+            },
+            {
+              "id": "tolbiac+++baudricourt",
+              "name": {
+                "value": "Tolbiac - Baudricourt",
+                "synonyms": [
+                  "Baudricourt",
+                  "Tolbiac - Baudricourt"
+                ]
+              }
+            },
+            {
+              "id": "choisy+++tolbiac",
+              "name": {
+                "value": "Choisy - Tolbiac",
+                "synonyms": [
+                  "Choisy",
+                  "Choisy - Tolbiac"
+                ]
+              }
+            },
+            {
+              "id": "italie+++tolbiac",
+              "name": {
+                "value": "Italie - Tolbiac",
+                "synonyms": [
+                  "Italie",
+                  "Italie - Tolbiac"
+                ]
+              }
+            },
+            {
+              "id": "moulin+des+pres",
+              "name": {
+                "value": "Moulin des Pres",
+                "synonyms": [
+                  "Moulin des Pres"
+                ]
+              }
+            },
+            {
+              "id": "bobillot+++tolbiac",
+              "name": {
+                "value": "Bobillot - Tolbiac",
+                "synonyms": [
+                  "Bobillot",
+                  "Bobillot - Tolbiac"
+                ]
+              }
+            },
+            {
+              "id": "vergniaud",
+              "name": {
+                "value": "Vergniaud",
+                "synonyms": [
+                  "Vergniaud"
+                ]
+              }
+            },
+            {
+              "id": "glaciere+++tolbiac",
+              "name": {
+                "value": "Glaciere - Tolbiac",
+                "synonyms": [
+                  "Glacière",
+                  "Glaciere",
+                  "Glaciere - Tolbiac"
+                ]
+              }
+            },
+            {
+              "id": "rene+coty",
+              "name": {
+                "value": "Rene Coty",
+                "synonyms": [
+                  "Coty",
+                  "René Coty",
+                  "Rene Coty"
+                ]
+              }
+            },
+            {
+              "id": "la+tombe+issoire",
+              "name": {
+                "value": "La Tombe Issoire",
+                "synonyms": [
+                  "Tombe Issoire",
+                  "issoire",
+                  "La Tombe Issoire"
+                ]
+              }
+            },
+            {
+              "id": "alesia+++general+leclerc",
+              "name": {
+                "value": "Alesia - General Leclerc",
+                "synonyms": [
+                  "Général Leclerc",
+                  "General Leclerc",
+                  "Leclerc",
+                  "Alesia - General Leclerc"
+                ]
+              }
+            },
+            {
+              "id": "alesia+++jean+moulin",
+              "name": {
+                "value": "Alesia - Jean Moulin",
+                "synonyms": [
+                  "Jean Moulin",
+                  "Alesia - Jean Moulin"
+                ]
+              }
+            },
+            {
+              "id": "les+plantes",
+              "name": {
+                "value": "Les Plantes",
+                "synonyms": [
+                  "Les Plantes"
+                ]
+              }
+            },
+            {
+              "id": "alesia+++didot",
+              "name": {
+                "value": "Alesia - Didot",
+                "synonyms": [
+                  "Didot",
+                  "Alesia - Didot"
+                ]
+              }
+            },
+            {
+              "id": "plaisance+++hopital+saint+joseph",
+              "name": {
+                "value": "Plaisance - Hopital Saint-Joseph",
+                "synonyms": [
+                  "Saint Joseph",
+                  "Hopital Saint-Joseph",
+                  "Plaisance - Hopital Saint-Joseph"
+                ]
+              }
+            },
+            {
+              "id": "vercingetorix",
+              "name": {
+                "value": "Vercingetorix",
+                "synonyms": [
+                  "Vercingetorix"
+                ]
+              }
+            },
+            {
+              "id": "labrouste",
+              "name": {
+                "value": "Labrouste",
+                "synonyms": [
+                  "Labrouste"
+                ]
+              }
+            },
+            {
+              "id": "brancion+++vouille",
+              "name": {
+                "value": "Brancion - Vouille",
+                "synonyms": [
+                  "Vouillé",
+                  "Vouille",
+                  "Brancion - Vouille"
+                ]
+              }
+            },
+            {
+              "id": "place+charles+vallin",
+              "name": {
+                "value": "Place Charles Vallin",
+                "synonyms": [
+                  "Vallin",
+                  "Charles Vallin",
+                  "Place Charles Vallin"
+                ]
+              }
+            },
+            {
+              "id": "convention+++vaugirard",
+              "name": {
+                "value": "Convention - Vaugirard",
+                "synonyms": [
+                  "Vaugirard",
+                  "Convention - Vaugirard"
+                ]
+              }
+            },
+            {
+              "id": "convention+++lecourbe",
+              "name": {
+                "value": "Convention - Lecourbe",
+                "synonyms": [
+                  "Lecourbe",
+                  "Convention - Lecourbe"
+                ]
+              }
+            },
+            {
+              "id": "felix+faure",
+              "name": {
+                "value": "Felix Faure",
+                "synonyms": [
+                  "Faure",
+                  "Félix Faure",
+                  "Felix Faure"
+                ]
+              }
+            },
+            {
+              "id": "boucicaut",
+              "name": {
+                "value": "Boucicaut",
+                "synonyms": [
+                  "Boucicaut"
+                ]
+              }
+            },
+            {
+              "id": "convention+++saint+charles",
+              "name": {
+                "value": "Convention - Saint-Charles",
+                "synonyms": [
+                  "Saint Charles",
+                  "Convention - Saint-Charles"
+                ]
+              }
+            },
+            {
+              "id": "javel",
+              "name": {
+                "value": "Javel",
+                "synonyms": [
+                  "Javel"
+                ]
+              }
+            },
+            {
+              "id": "pont+mirabeau",
+              "name": {
+                "value": "Pont Mirabeau",
+                "synonyms": [
+                  "Mirabeau",
+                  "Pont Mirabeau"
+                ]
+              }
+            },
+            {
+              "id": "eglise+d'auteuil",
+              "name": {
+                "value": "Eglise d'Auteuil",
+                "synonyms": [
+                  "Eglise Auteuil",
+                  "Eglise d'Auteuil"
+                ]
+              }
+            },
+            {
+              "id": "chardon+lagache+++molitor",
+              "name": {
+                "value": "Chardon-Lagache - Molitor",
+                "synonyms": [
+                  "Chardon-Lagache - Molitor"
+                ]
+              }
+            },
+            {
+              "id": "jouvenet",
+              "name": {
+                "value": "Jouvenet",
+                "synonyms": [
+                  "Jouvenet"
+                ]
+              }
+            },
+            {
+              "id": "versailles+++chardon+lagache",
+              "name": {
+                "value": "Versailles - Chardon Lagache",
+                "synonyms": [
+                  "Versailles - Chardon Lagache"
+                ]
+              }
+            },
+            {
+              "id": "porte+de+saint+cloud+++murat",
+              "name": {
+                "value": "Porte de Saint-Cloud - Murat",
+                "synonyms": [
+                  "Murat",
+                  "Porte de Saint-Cloud - Murat"
+                ]
+              }
+            },
+            {
+              "id": "porte+de+saint+cloud",
+              "name": {
+                "value": "Porte de Saint-Cloud",
+                "synonyms": [
+                  "Porte Saint-Cloud",
+                  "Porte de Saint-Cloud"
+                ]
+              }
+            },
+            {
+              "id": "porte+de+saint+cloud+++michel+ange",
+              "name": {
+                "value": "Porte de Saint-Cloud - Michel-Ange",
+                "synonyms": [
+                  "Porte de Saint-Cloud - Michel-Ange"
+                ]
+              }
+            },
+            {
+              "id": "michel+ange+++varize",
+              "name": {
+                "value": "Michel-Ange - Varize",
+                "synonyms": [
+                  "Michel-Ange - Varize"
+                ]
+              }
+            },
+            {
+              "id": "exelmans",
+              "name": {
+                "value": "Exelmans",
+                "synonyms": [
+                  "Exelmans"
+                ]
+              }
+            },
+            {
+              "id": "michel+ange+++molitor",
+              "name": {
+                "value": "Michel-Ange - Molitor",
+                "synonyms": [
+                  "Michel-Ange - Molitor"
+                ]
+              }
+            },
+            {
+              "id": "michel+ange+++auteuil",
+              "name": {
+                "value": "Michel-Ange - Auteuil",
+                "synonyms": [
+                  "Michel-Ange - Auteuil"
+                ]
+              }
+            },
+            {
+              "id": "wilhem+++versailles",
+              "name": {
+                "value": "Wilhem - Versailles",
+                "synonyms": [
+                  "Wilhem",
+                  "Wilhem - Versailles"
+                ]
+              }
+            }
+          ],
+          "name": "station_type"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "HorairesIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "station",
+              "type": "station_type",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1407313364947.786701536083"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "SKILL_RESPONSE"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1407313364947.786701536083",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Pour quelle station souhaitez-vous connaître les horaires de passage ?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Pour quelle arrêt souhaitez-vous connaître les horaires de passage ?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "3"
+}

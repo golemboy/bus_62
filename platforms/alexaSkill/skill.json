@@ -1,0 +1,51 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "https://webhook.jovo.cloud/a208e865-c254-4d33-ad49-9bebe968278f",
+          "sslCertificateType": "Trusted"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "fr-FR": {}
+      },
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "fr-FR": {
+          "name": "Bus 62",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/b2c5/bf9e620e70a04276a6a7a26d6b898677/APP_ICON?versionId=kIh5oL5PAyqN.Q7Y68uZb6JZ7S9QP_tV&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191227T212226Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20191227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fd3512f7b1f3378b3456baa69159a259c43a2ec8749fbb4d199db67630dbfd66",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/5bc6/d94a3c37444a4df39caef46eb93b732f/APP_ICON_LARGE?versionId=5ZbQa8mGVaCD.vzMIHsKAOMP_qMA8xgv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191227T212226Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20191227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8afaf236962646f2a015ca400d8a87bb201a1ac173208d4f80198c00aaf1b0b7",
+          "summary": "Donne les horaires de passage du bus 62 sur le réseau RATP. Permet de rappeler le dernier horaire de passage demandé.",
+          "description": "La phrase : \"Alexa, ouvre Bus soixante deux et donne-moi les horaires à la station Porte de France\" permet de donner les horaires de passage à Porte de France avec confirmation de la demande.\n\nLa phrase : \"Alexa, ouvre Bus soixante deux et quand arrive le prochain bus\" ou \"Alexa, ouvre Bus soixante deux et répète\" permet de demander les horaires de la dernière station demandée sans confirmation.",
+          "examplePhrases": [
+            "Alexa, ouvre Bus soixante deux",
+            "Alexa, ouvre Bus soixante deux et donne-moi les horaires à la station Porte de France",
+            "Alexa, ouvre Bus soixante deux et donne-moi les derniers horaires"
+          ],
+          "keywords": [
+            "horaires",
+            "bus",
+            "paris"
+          ],
+          "updatesDescription": ""
+        }
+      },
+      "isAvailableWorldwide": false,
+      "category": "PUBLIC_TRANSPORTATION",
+      "distributionCountries": [
+        "FR"
+      ]
+    }
+  }
+}
